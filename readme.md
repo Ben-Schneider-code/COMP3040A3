@@ -23,7 +23,7 @@ This is an endpoint that represents places for holding events in Manitoba.
 - **time** : the time the event is being held at the venue.  
 
 **Example Query**  
-`https://ManitobaEventPlanner/venue/?name=zoo?time=1:00pm`
+`https://ManitobaEventPlanner/venue/?name=zoo&time=1:00pm`
 
 ## Resources
 
@@ -63,7 +63,7 @@ Response:
 
 **Venue sample request and response**
 ```
-Request: https://ManitobaEventPlanner/venue/?name="Copa Banquet Centre"?time=1:00pm
+Request: https://ManitobaEventPlanner/venue/?name="Copa Banquet Centre"&time=1:00pm
 Response: 
 {
     "busy": false,
