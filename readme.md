@@ -34,7 +34,7 @@ This resource represents information about the weather.
 {  
     "temperature": number,
     "precipitation": string,
-    "cloud-coverage": string,
+    "cloud-coverage": string
 }  
 ```
 
@@ -45,7 +45,7 @@ This resource represents the venue the event is being held at.
 {
     "busy": boolean,
     "event-types": [string],
-    "rating": number,
+    "rating": number
 }
 ```
 
@@ -57,7 +57,7 @@ Response:
 {  
     "temperature": -5,
     "precipitation": "snowy",
-    "cloud-coverage": "cloudy",
+    "cloud-coverage": "cloudy"
 }  
 ```
 ```
@@ -66,7 +66,7 @@ Response:
 {  
     "temperature": -1,
     "precipitation": "ice-pellets",
-    "cloud-coverage": "clear sky",
+    "cloud-coverage": "clear sky"
 }  
 ```
 
@@ -77,6 +77,6 @@ Response:
 {
     "busy": false,
     "event-types": ["Wedding parties", "Birthday parties"],
-    "rating": 4.2,
+    "rating": 4.2
 }
 ```
