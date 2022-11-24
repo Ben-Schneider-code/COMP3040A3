@@ -34,7 +34,7 @@ This resource represents information about the weather.
 {  
     "temperature": number,
     "precipitation": string,
-    "cloud-coverage": string
+    "cloud-coverage": string,
 }  
 ```
 
