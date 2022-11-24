@@ -1,19 +1,19 @@
 # **Manitoba Event Planner**
 
 ## **API Description**
-This is a REST API that provides resources to help Manitobians plan their events. This API allows Manitobians to obtain information about the weather and the venue where they are holding their event.  
+This is an REST API that provides resource to help Manitobians plan their events. This API allows Manitobians to obtain information about the weather and destination they are holding their event.  
 
 ## **Endpoints**
 
 ### **Weather**  
-This endpoint represents the weather in Manitobian cities.  
+This is an endpoint represents weather in Manitobian cities.  
 
 **Parameters**
-- **city** : the name of the city about which the user wants the weather information.  
-- **unit** : the unit that the user wants their temperature value in.
+- **city** : the name of the city the user wants weather information about  
+- **unit** : the unit that the user wants their temperature value in  
 
 **Example Query**  
-`https://ManitobaEventPlanner.com/weather/?unit=celcius&city=winnipeg`
+`https://ManitobaEventPlanner/weather/?unit=celcius&city=winnipeg`
 
 ### **Venue**  
 This is an endpoint that represents places for holding events in Manitoba.
@@ -23,7 +23,7 @@ This is an endpoint that represents places for holding events in Manitoba.
 - **time** : the time the event is being held at the venue.  
 
 **Example Query**  
-`https://ManitobaEventPlanner.com/venue/?name=zoo&time=1:00pm`
+`https://ManitobaEventPlanner/venue/?name=zoo?time=1:00pm`
 
 ## Resources
 
@@ -52,7 +52,7 @@ This resource represents the venue the event is being held at.
 ## Samples
 **Weather sample request and response**
 ```
-Request: https://ManitobaEventPlanner.com/weather/?unit=celcius&city=winnipeg
+Request: https://ManitobaEventPlanner/weather/?unit=celcius&city=winnipeg
 Response: 
 {  
     "temperature": -5,
@@ -60,10 +60,19 @@ Response:
     "cloud-coverage": "cloudy",
 }  
 ```
+```
+Request: https://ManitobaEventPlanner/weather/?unit=celcius&city=brandon
+Response: 
+{  
+    "temperature": -1,
+    "precipation": "ice-pellets",
+    "cloud-coverage": "clear sky",
+}  
+```
 
 **Venue sample request and response**
 ```
-Request: https://ManitobaEventPlanner.com/venue/?name="Copa Banquet Centre"&time=1:00pm
+Request: https://ManitobaEventPlanner/venue/?name="Copa Banquet Centre"?time=1:00pm
 Response: 
 {
     "busy": false,
