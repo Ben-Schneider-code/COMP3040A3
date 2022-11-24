@@ -33,7 +33,7 @@ This resource represents information about the weather.
 ```
 {  
     "temperature": number,
-    "precipation": string,
+    "precipitation": string,
     "cloud-coverage": string
 }  
 ```
@@ -56,7 +56,7 @@ Request: https://ManitobaEventPlanner.com/weather/?unit=celcius&city=winnipeg
 Response: 
 {  
     "temperature": -5,
-    "precipation": "snowy",
+    "precipitation": "snowy",
     "cloud-coverage": "cloudy",
 }  
 ```
@@ -65,7 +65,7 @@ Request: https://ManitobaEventPlanner.com/weather/?unit=celcius&city=brandon
 Response: 
 {  
     "temperature": -1,
-    "precipation": "ice-pellets",
+    "precipitation": "ice-pellets",
     "cloud-coverage": "clear sky",
 }  
 ```
