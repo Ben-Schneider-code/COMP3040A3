@@ -1,12 +1,12 @@
 # **Manitoba Event Planner**
 
 ## **API Description**
-This is a REST API that provides resources to help Manitobians plan their events. This API allows Manitobians to obtain information about the weather and the venue where they are holding their event.
+This is a REST API that provides resources to help Manitobans plan their events. This API allows Manitobans to obtain information about the weather and the venue where they are holding their event.
 
 ## **Endpoints**
 
 ### **Weather**  
-This endpoint represents the weather in Manitobian cities. 
+This endpoint represents the weather in Manitoban cities. 
 
 **Parameters**
 - **city** : the name of the city about which the user wants the weather information.  
